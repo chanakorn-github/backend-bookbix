@@ -10,7 +10,8 @@ RUN . /etc/os-release \
     && if [ "$(dpkg --print-architecture)" = "amd64" ]; then apt-get install -y mongodb-database-tools; fi \
     && apt-get clean -y && rm -rf /var/lib/apt/lists/*
 
-RUN sudo npm install -g @nestjs/cli
+RUN sudo npm install -g @nestjs/cli]
+RUN npm i -g @types/node
 
 # [Optional] Uncomment this section to install additional OS packages.
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
