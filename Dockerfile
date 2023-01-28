@@ -1,7 +1,6 @@
 FROM mcr.microsoft.com/devcontainers/javascript-node:0-18
 
 RUN apt-get update
-RUN apt-get -y install nodejs
 # Install MongoDB command line tools - though mongo-database-tools not available on arm64
 WORKDIR /app
 COPY ./ /app
